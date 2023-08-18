@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> BEM Developers</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,800&display=swap');
+      .services{
+        font-family: 'EB Garamond', serif;
+      }
+      </style>
+</head>
+
+<body>
+  <section class="sub-header">
+    <!-- <nav>
+        <a href="index.html"><img src="public/Images/logo-2-preview.png" alt="logo"></a>
+        <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="ongoing_projects.html">Ongoing Projects</a></li>
+        <li> <a href="completed_projects.html">Completed projects</a></li>
+        <li><a href="">JOINT VENTURES</a> </li>
+        <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-dark fs-6">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="public/Images/B.em_logo.png" style="margin-top: -5vh;" alt="logo""></a>
+            <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"
+            style="padding: 0px 2vw; justify-content: end;">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" aria-current="page" href="ongoing_projects.html"
+                  role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                  Projects
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropstart">
+                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                      href="ongoing_projects.html">Ongoing Projects</a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="ongoing_projects.html#ongoing-residential" class="dropdown-item">Residential</a>
+                        <a href="ongoing_projects.html#ongoing-commercial" class="dropdown-item">Commercial</a>
+                        <a href="ongoing_projects.html#ongoing-industrial" class="dropdown-item">Industrial</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropstart">
+                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                      href="completed_projects.html">Completed Projects</a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="completed_projects.html#completed-residential" class="dropdown-item">Residential</a>
+                        <a href="completed_projects.html#completed-commercial" class="dropdown-item">Commercial</a>
+                        <a href="completed_projects.html#completed-industrial" class="dropdown-item">Industrial</a>
+                        <a href="completed_projects.html#ongoing-" class="dropdown-item">Renovation</a>
+                        <a href="completed_projects.html#ongoing-" class="dropdown-item">Interior</a>
+                        <a href="completed_projects.html#completed-institutional" class="dropdown-item">Institutional
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+              <li class="nav-item">
+                <a class="nav-link" href="JointVenture.html">JOINT VENTURES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Consultancy.html">Consultancy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+    <h1 align="center"> Ongoing projects </h1>
+  </section>
+
+  <!-------------- Ongoing projects content -------->
+
+  <div class="modalBox" id="imageModal">
+    <span class="close" onclick="closeModal(`img`)">&times;</span>
+    <div class="carousel">
+      <img class="modalContent" id="modalImage">
+      <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+      <button class="next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+  </div>
+  <section class="services" id="ongoing-residential">
+    <h1>These are Ongoing Residential Projects</h1>
+    <h3>2015 - 2019</h3>
+    <div class="ongoing-resi-img" style="display: flex; flex-wrap: wrap; margin: 2% 0px; justify-content: center;">
+      <div class="container">
+        <div class="front side">
+          <img src="public/Images/adyar elevation.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="back side">
+          <div class="content">
+            <h1>Details</h1>
+            <p class="card-text" style="font-weight: bold;">Project Type : <span
+                style="font-weight: lighter;">Appartment</span> </p>
+            <p class="card-text" style="font-weight: bold;">Client : <span style="font-weight: lighter;">Mars
+                Foundation</span> </p>
+            <p class="card-text" style="font-weight: bold;">📍: <span style="font-weight: lighter;">Crompet</span>
+            </p>
+            <button
+              onclick="togglePopup( ['public/Images/S-(1).jpg', 'public/Images/S-(2).jpg', 'public/Images/S-(3).jpg'])">Click
+              Here</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="ongoing-commercial">
+    <h1>These are Ongoing Commercial Projects</h1>
+    <h3>2015 - 2020</h3>
+
+    <div class="ongoing-commercial-img"
+      style="display: flex; flex-wrap: wrap; margin: 2% 0px; justify-content: center;">
+      <div class="container">
+        <div class="front side">
+          <img src="public/Images/arumbakkam_2.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="back side">
+          <div class="content">
+            <h1>Details</h1>
+            <p class="card-text" style="font-weight: bold;">Project Type : <span
+                style="font-weight: lighter;">Appartment</span> </p>
+            <p class="card-text" style="font-weight: bold;">Client : <span style="font-weight: lighter;">Mars
+                Foundation</span> </p>
+            <p class="card-text" style="font-weight: bold;">📍: <span style="font-weight: lighter;">Crompet</span>
+            </p>
+            <button
+              onclick="togglePopup( ['public/Images/S-(1).jpg', 'public/Images/S-(2).jpg', 'public/Images/S-(3).jpg'])">Click
+              Here</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="ongoing-industrial">
+    <h1>These are ongoing Industrial Projects</h1>
+    <h3>2015 - 2020</h3>
+    <div class="ongoing-industrial-img"
+      style="display: flex; flex-wrap: wrap; margin: 2% 0px; justify-content: center;">
+      <div class="container">
+        <div class="front side">
+          <img src="public/Images/sample_thiru.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="back side">
+          <div class="content">
+            <h1>Details</h1>
+            <p class="card-text" style="font-weight: bold;">Project Type : <span
+                style="font-weight: lighter;">Appartment</span> </p>
+            <p class="card-text" style="font-weight: bold;">Client : <span style="font-weight: lighter;">Mars
+                Foundation</span> </p>
+            <p class="card-text" style="font-weight: bold;">📍: <span style="font-weight: lighter;">Crompet</span>
+            </p>
+            <button
+              onclick="togglePopup( ['public/Images/S-(1).jpg', 'public/Images/S-(2).jpg', 'public/Images/S-(3).jpg'])">Click
+              Here</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!------------------ facilities---------->
+  <section class="facilities">
+    <h1>Upcoming projects </h1>
+    <p> we are assigned with the projects </p>
+
+    <div class="row-sample">
+      <div class="facilities-col">
+        <img src="public/Images/Sample%203.png">
+        <h3> Upcoming residential building</h3>
+        <p> project no 57, @Anna nagar<br> residential building of total build up area 5600 sq.ft<br> client Mr ABC </p>
+      </div>
+      <div class="facilities-col">
+        <img src="public/Images/Sample2.png">
+        <h3> Upcoming Industrial Building</h3>
+        <p> project no 59, @Ambattur<br> Industrial building of total build up area 5600 sq.ft<br> client Mr ABC </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!----------------JavaScript gor toggle menu------------>
+
+
+  <script>
+    function togglePopup(images) {
+      var modal = document.getElementById("imageModal");
+      var modalImage = document.getElementById("modalImage");
+
+      // You can pass an array of images for each modal and store them in a data attribute
+      modalImage.dataset.images = JSON.stringify(images);
+      modalImage.dataset.currentImageIndex = 0;
+      modalImage.src = images[0];
+
+      modal.style.display = "block";
+    }
+    function changeImage(direction) {
+      var modalImage = document.getElementById("modalImage");
+      var images = JSON.parse(modalImage.dataset.images);
+      var currentImageIndex = parseInt(modalImage.dataset.currentImageIndex);
+      console.log(modalImage.dataset.currentImageIndex);
+
+      currentImageIndex += direction;
+      if (currentImageIndex < 0) {
+        currentImageIndex = images.length - 1;
+      } else if (currentImageIndex >= images.length) {
+        currentImageIndex = 0;
+      }
+
+      modalImage.dataset.currentImageIndex = currentImageIndex;
+      modalImage.src = images[currentImageIndex];
+    }
+
+
+    function closeModal(media) {
+      if (media === "img") {
+        console.log("this is close button of image modal");
+        var modal = document.getElementById("imageModal");
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  <!-- script of bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

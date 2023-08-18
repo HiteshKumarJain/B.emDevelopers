@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BEM Developers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <section class="header">
+        <!-- <nav>
+            <a href="index.html"><img src="public/Images/B.em_logo.png"  style="margin-top: -5vh;"  alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <ul class="main-menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">Projects</a>
+                            <ul class="sub-menu">
+                                <li class="has-dropdown">
+                                    <a href="completed_projects.html">Completed projects</a>
+                                    <ul class="sub-sub-menu">
+                                        <li><a href="completed_projects.html#industrial">Industrial</a></li>
+                                        <li><a href="completed_projects.html#commercial">Commercial</a></li>
+                                        <li><a href="completed_projects.html#residential">Residential</a></li>
+                                    </ul>
+                                </li>
+                                <hr>
+                                <li class="has-dropdown">
+                                    <a href="ongoing_projects.html" style="padding: 4vh;">Ongoing Projects</a>
+                                    <ul class="sub-sub-menu">
+                                        <li><a href="ongoing_projects.html#industrial">Industrial</a></li>
+                                        <li><a href="ongoing_projects.html#commercial">Commercial</a></li>
+                                        <li><a href="ongoing_projects.html#residential">Residential</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="JointVenture.html">JOINT VENTURES</a></li>
+                        <li><a href="Consultancy.html">Consultancy</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav> -->
+        <!------------ Nav bar  --------->
+        <nav class="navbar navbar-expand-lg navbar-dark fs-6">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="public/Images/B.em_logo.png" style="margin-top: -5vh;" alt="logo""></a>
+                <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent"
+                        style="padding: 0px 2vw; justify-content: end;">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About us</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="ongoing_projects.html" role="button"
+                                    data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    Projects
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropstart">
+                                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                            href="ongoing_projects.html">Ongoing Projects</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="ongoing_projects.html#ongoing-residential"
+                                                    class="dropdown-item">Residential</a>
+                                                <a href="ongoing_projects.html#ongoing-commercial"
+                                                    class="dropdown-item">Commercial</a>
+                                                <a href="ongoing_projects.html#ongoing-industrial"
+                                                    class="dropdown-item">Industrial</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropstart">
+                                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                            href="completed_projects.html">Completed Projects</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="completed_projects.html#completed-residential"
+                                                    class="dropdown-item">Residential</a>
+                                                <a href="completed_projects.html#completed-commercial"
+                                                    class="dropdown-item">Commercial</a>
+                                                <a href="completed_projects.html#completed-industrial"
+                                                    class="dropdown-item">Industrial</a>
+                                                <a href="completed_projects.html#ongoing-"
+                                                    class="dropdown-item">Renovation</a>
+                                                <a href="completed_projects.html#ongoing-"
+                                                    class="dropdown-item">Interior</a>
+                                                <a href="completed_projects.html#completed-institutional"
+                                                    class="dropdown-item">Institutional </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="JointVenture.html">JOINT VENTURES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Consultancy.html">Consultancy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+        <div class="text-box" align="center">
+            <h1> Building with best experience </h1>
+
+            <li>Get an estimate created with specialised software and under the supervision of a professional.</li>
+            <li>
+                Receive a quote that breaks down each and every cost detail.</li>
+            <li>Understand what is and isn't included in your building package.</li>
+            <li>Keep an eye on and review the costs of building materials and finishes.</li>
+            <li>Take advantage of our full no-surprise guarantee on the final price</li>
+            <a href="https://www.google.com/maps/place/B.eM+DEVELOPERS+Office/@13.0906,80.196834,15z/data=!4m6!3m5!1s0x3a526554bdc9a7cb:0x3f696bf0b581c626!8m2!3d13.0905995!4d80.1968339!16s%2Fg%2F11kb71x4z1?hl=en&entry=ttu"
+                target="_blank" class="About-btn">Visit Us To Know More</a>
+        </div>
+        <div class="modalBox" id="videoModal">
+            <span class="close" onclick="closeModal(`video`)">&times;</span>
+            <video class="modalContent" id="modalVideo" controls autoplay muted>
+        </div>
+        <div id="videoContent">
+            <div class="close-btn">
+                <span onclick="closeVideo()">&times;</span>
+            </div>
+            <!-- <video id="sampleVideo" controls muted autoplay onclick="videoModal()"></video> -->
+            <img id="sampleImage" src="public/Images/B.em_logo.png" onclick="videoModal()"></img>
+        </div>
+    </section>
+
+
+    <!-------service----------------->
+
+    <section class="services">
+        <h1> Services we offer</h1>
+        <p> We do all kinds of construction services</p>
+
+        <div class="row-sample">
+            <div class="services-col">
+                <h3>2D and 3D plan</h3>
+                <p> We have professionals to draw 2d and 3D plan as per vasthu including all requirements. </p>
+            </div>
+            <div class="services-col">
+                <h3>Building Construction</h3>
+                <p> We have experts in construction field since we are at the field for two decades with experienced
+                    professionals and local dealers contact for material which is heplful in selecting quality material
+                    anywhere in Tamilnadu. </p>
+            </div>
+            <div class="services-col">
+                <h3>Renovation</h3>
+                <p> We upgrade and renovate existing structures to improve functionality, aesthetics, and safety. This
+                    can involve interior remodelling or exterior upgrades. </p>
+            </div>
+            <div class="services-col">
+                <h3>Consultancy</h3>
+                <p> We are dedicated to providing exceptional construction consultancy services that bring your visions
+                    to life. With years of expertise in the industry, we offer comprehensive solutions to meet your
+                    construction project's every need. </p>
+            </div>
+            <div class="services-col">
+                <h3>Interior</h3>
+                <p> We do all kinds of interior works. which helps you in organising space in home or workspace etc </p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!----------- campus   --------->
+
+    <section class="campus">
+        <h1> Our Recent Works</h1>
+        <p> our recent projects</p>
+        <!-- Modal  -->
+        <div class="modalBox" id="imageModal">
+            <span class="close" onclick="closeModal(`img`)">&times;</span>
+            <div class="carousel">
+                <img class="modalContent" id="modalImage">
+                <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                <button class="next" onclick="changeImage(1)">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="row-sample">
+            <div class="campus-col"
+                onclick="togglePopup( ['public/Images/S-(1).jpg', 'public/Images/S-(2).jpg', 'public/Images/S-(3).jpg'])"
+                id="imag-1">
+                <img src="public/Images/Coimbator.jpg">
+                <div class="layer">
+                    <h3>Coimbatore</h3>
+                </div>
+            </div>
+            <div class="campus-col"
+                onclick="togglePopup( ['public/Images/S-(2).jpg', 'public/Images/S-(3).jpg', 'public/Images/S-(1).jpg'])"
+                id="imag-2">
+                <img src="public/Images/ECR Twin Villa - Front View.jpg">
+                <div class="layer">
+                    <h3>East Coast Road</h3>
+                </div>
+            </div>
+            <div class="campus-col"
+                onclick="togglePopup( ['public/Images/S-(3).jpg', 'public/Images/S-(1).jpg', 'public/Images/S-(2).jpg'])"
+                id="imag-3">
+                <img src="public/Images/VELACHERY ELEVATION (1).jpg">
+                <div class="layer">
+                    <h3>Velachery</h3>
+                </div>
+            </div>
+            <div class="campus-col"
+                onclick="togglePopup( ['public/Images/S-(4).jpg', 'public/Images/S-(5).jpg', 'public/Images/S-(6).jpg'])"
+                id="imag-4">
+                <img src="public/Images/Madambakkam.jpg">
+                <div class="layer">
+                    <h3>@_@</h3>
+                </div>
+            </div>
+            <div class="campus-col"
+                onclick="togglePopup( ['public/Images/S-(5).jpg', 'public/Images/S-(6).jpg', 'public/Images/S-(4).jpg'])"
+                id="imag-5">
+                <img src="public/Images/Shikshaa International School_01.jpg">
+                <div class="layer">
+                    <h3>Hasthinapuram</h3>
+                </div>
+            </div>
+            <div class="campus-col"
+                onclick="togglePopup( ['public/Images/S-(6).jpg', 'public/Images/S-(4).jpg', 'public/Images/S-(5).jpg'])"
+                id="imag-6">
+                <img src="public/Images/S-(6).jpg">
+                <div class="layer">
+                    <h3>Vandalur</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <div class="counter-wrapper">
+
+        <div class="counter">
+            <span class="counter-label">Projects Done:</span>
+            <span class="counter-value" id="project-counter">0</span>
+        </div>
+        <div class="counter">
+            <span class="counter-label">Million sq.ft delivered:</span>
+            <span class="counter-value" id="land-counter">0</span>
+        </div>
+        <div class="counter">
+            <span class="counter-label">Years of excellence in the industry:</span>
+            <span class="counter-value" id="years-counter">0</span>
+        </div>
+    </div>
+    
+    
+
+    <!------------ facilities---------->
+
+    <section class="facilities">
+        <h1>Upcoming projects </h1>
+        <p> we are assigned with the projects </p>
+
+        <div class="row-sample">
+            <div class="facilities-col">
+                <img src="public/Images/Sample%203.png">
+                <h3> Upcoming residential building</h3>
+                <p> project no 57, @Anna nagar<br> residential building of total build up area 5600 sq.ft<br> client Mr
+                    ABC </p>
+            </div>
+            <div class="facilities-col">
+                <img src="public/Images/Sample2.png">
+                <h3> Upcoming Industrial Building</h3>
+                <p> project no 59, @Ambattur<br> Industrial building of total build up area 5600 sq.ft<br> client Mr ABC
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!----------testimonials---------->
+
+    <section class="testimonials">
+        <h1> What Our Clients says</h1>
+        <p> therila </p>
+        <div class="row-sample">
+            <div class="testimonial-col">
+                <div class="testimonial-img">
+                    <img src="public/Images/client-1.jpg">
+                </div>
+                <div>
+                    <p> Bem developers is awersome team, renovation done by team was good. real life difficulites for
+                        using some advanced technologies was explained to me, insead of wasting money in an undeveloped
+                        new tech as per their guidance nordern solution is solved by replacing it in mordern was which
+                        could'nt affets my mordern interior. </p>
+                    <h3>Nicole waren</h3>
+                    <i class='fa-thin fa-star'></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <div class="testimonial-img">
+                    <img src="public/Images/client-2.jpeg">
+                </div>
+                <div>
+                    <p>Thanks Bem developers for renovating my old home within budegets as per aggrement thou material
+                        price was high after quote you didnt comperimise in material quality and finished it within
+                        budget. </p>
+                    <h3>Naresh</h3>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row-sample">
+            <div class="testimonial-col">
+                <div class="testimonial-img">
+                    <img src="public/Images/client-3.jpeg">
+                </div>
+                <div>
+                    <p> My dream came true with bem developers, i wished to build my house in with good looking and
+                        without compermising in quality since its my dream to lasst long, now my house is awesome both
+                        exterior and interior as per vasthu and as per drawings </p>
+                    <h3>Dinesh</h3>
+
+                </div>
+            </div>
+
+            <div class="testimonial-col">
+                <div class="testimonial-img">
+                    <img src="public/Images/client-4.jpeg">
+                </div>
+                <div>
+                    <p> its amazing within a short span of time you guys compled some important renovation in my
+                        industry without creating any loss of production i like your flexibility in working with us.</p>
+                    <h3> Karupasamy </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------- footer----------------->
+
+    <section class="footer">
+        <h4>About us</h4>
+        <p> we are perfect onstruction company..................................................................</p>
+        <div class="icons">
+        </div>
+    </section>
+
+    <!------- javaScript toggle menu----------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "-200px";
+        }
+        // JavaScript code to handle the modal functionality
+        function togglePopup(images) {
+            var modal = document.getElementById("imageModal");
+            var modalImage = document.getElementById("modalImage");
+
+            // You can pass an array of images for each modal and store them in a data attribute
+            modalImage.dataset.images = JSON.stringify(images);
+            modalImage.dataset.currentImageIndex = 0;
+            modalImage.src = images[0];
+
+            modal.style.display = "block";
+        }
+
+        function videoModal() {
+            console.log("This is video modal");
+            var modal = document.getElementById("videoModal");
+            var modalVideo = document.getElementById("modalVideo");
+            var videoSrc = document.querySelector("#videoContent video").src;
+            modalVideo.src = videoSrc;
+            modal.style.display = "block";
+            var sampleVideo = document.getElementById("sampleVideo");
+            sampleVideo.muted = true;
+            closeVideo();
+        }
+
+        function locationPopup() {
+            var locationModal = document.getElementById("locationModal");
+            locationModal.style.display = "block";
+        }
+        // Java script code to change images in carousel
+        function changeImage(direction) {
+            var modalImage = document.getElementById("modalImage");
+            var images = JSON.parse(modalImage.dataset.images);
+            var currentImageIndex = parseInt(modalImage.dataset.currentImageIndex);
+            console.log(modalImage.dataset.currentImageIndex);
+
+            currentImageIndex += direction;
+            if (currentImageIndex < 0) {
+                currentImageIndex = images.length - 1;
+            } else if (currentImageIndex >= images.length) {
+                currentImageIndex = 0;
+            }
+
+            modalImage.dataset.currentImageIndex = currentImageIndex;
+            modalImage.src = images[currentImageIndex];
+        }
+
+
+        function closeModal(media) {
+            if (media === "img") {
+                console.log("this is close button of image modal");
+                var modal = document.getElementById("imageModal");
+                modal.style.display = "none";
+            } else if (media === "video") {
+                var modal = document.getElementById("videoModal");
+                modal.style.display = "none";
+                var videoPopup = document.getElementById("videoContent");
+                videoPopup.style.display = "block";
+                var modalVideo = document.getElementById("modalVideo");
+                modalVideo.muted = true;
+            } else if (media === "location") {
+                var locationModal = document.getElementById("locationModal");
+                locationModal.style.display = "none";
+            }
+        }
+        closeVideo = () => {
+            var sampleVideo = document.getElementById("sampleVideo");
+            sampleVideo.muted = true;
+            var videoPopup = document.getElementById("videoContent");
+            videoPopup.style.display = "none";
+        }
+
+        // Close the modal if the user clicks anywhere outside of the modal content
+        window.onclick = function (event) {
+            var modal = document.getElementById("imageModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+        //JavaScript for playing multiple videos after completing one video
+        const videoUrls = [
+            "public/Aankh Marey Video Song.mp4",
+            "https://teluguvideos.in/siteuploads/theme2/files/sfd1/109/Saranga%20Dariya%20(Mangli)%201080p-(Teluguvideos.in).mp4",
+            "https://teluguvideos.in/siteuploads/theme2/files/sfd1/169/Tum%20Tum%20(Tamil)%201080p-(Teluguvideos.in).mp4"
+            // Add more video URLs as needed
+        ];
+
+        let currentVideoIndex = 0;
+        const video = document.getElementById('sampleVideo');
+
+        video.addEventListener('ended', playNextVideo);
+
+        function playNextVideo() {
+            currentVideoIndex++;
+            if (currentVideoIndex < videoUrls.length) {
+                video.src = videoUrls[currentVideoIndex];
+                video.load();
+                video.play();
+            } else {
+                // All videos have been played, do something else or loop back to the first video
+                // For example, to loop back to the first video:
+                currentVideoIndex = 0;
+                video.src = videoUrls[currentVideoIndex];
+                video.load();
+                video.play();
+            }
+        }
+
+        // Start playing the first video
+        video.src = videoUrls[currentVideoIndex];
+        video.load();
+        video.play();
+
+        //JavaScript for playing multiple videos after completing one video in Modal
+
+        let currentVideoIndexOfModal = 0;
+        const modalVideo = document.getElementById('modalVideo');
+        const modal = document.getElementById('videoModal');
+
+        modalVideo.addEventListener('ended', playNextModalVideo);
+
+        function playNextModalVideo() {
+            currentVideoIndexOfModal++;
+            if (currentVideoIndexOfModal < videoUrls.length) {
+                modalVideo.src = videoUrls[currentVideoIndexOfModal];
+                modalVideo.load();
+                modalVideo.play();
+            } else {
+                // All videos have been played, close the modal or do something else
+                closeModal('video');
+            }
+        }
+
+        function openModal() {
+            currentVideoIndexOfModal = 0;
+            modalVideo.src = videoUrls[currentVideoIndexOfModal];
+            modalVideo.load();
+            modalVideo.play();
+            modal.style.display = "block";
+        }
+
+        // function closeModal() {
+        //     modal.style.display = "none";
+        //     modalVideo.pause();
+        // }
+    </script>
+    <script src="script.js"></script>
+    <!-- <script>
+// script.js
+const targetValue = 10; // Change this to your desired project count
+const duration = 1000;  // Duration in milliseconds
+const stepTime = Math.abs(Math.floor(duration / targetValue));
+
+function animateCounter() {
+    const counterElement = document.getElementById('project-counter');
+    const start = 0;
+    const end = targetValue;
+
+    function updateCount(currentCount) {
+        counterElement.textContent = currentCount;
+    }
+
+    function animate(currentTime) {
+        if (!startTime) startTime = currentTime;
+        const elapsedTime = currentTime - startTime;
+        const progress = Math.min(elapsedTime / duration, 1);
+
+        const currentCount = Math.floor(progress * (end - start) + start);
+        updateCount(currentCount);
+
+        if (progress < 1) {
+            requestAnimationFrame(animate);
+        }
+    }
+
+    let startTime = null;
+    requestAnimationFrame(animate);
+}
+
+// Call the animation function when the element is in view
+const projectCounterElement = document.getElementById('project-counter');
+const isInView = (element) => {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+};
+
+document.addEventListener('scroll', () => {
+    if (isInView(projectCounterElement)) {
+        animateCounter();
+    }
+});
+
+    </script> -->
+
+    <!-- script of bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
