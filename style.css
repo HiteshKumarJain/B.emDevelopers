@@ -514,7 +514,7 @@ h3 {
 .sub-header {
     min-height: 60vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(public/Images/sample2.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(public/Images/Sample2.png);
     background-position: center;
     background-size: 100% 100%;
     /* text-align: center; */
@@ -1133,7 +1133,7 @@ footer * {
     min-height: 15em;
 }
 
-h3 {
+footer h3 {
     width: 100%;
     text-align: left;
     color: white;
@@ -1141,7 +1141,7 @@ h3 {
     white-space: nowrap;
 }
 
-ul {
+footer ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -1149,11 +1149,11 @@ ul {
     margin: 0;
 }
 
-li:not(:first-child) {
+footer li:not(:first-child) {
     margin-top: 0.8em;
 }
 
-ul li a {
+footer ul li a {
     color: #fff;
     text-decoration: none;
 }
