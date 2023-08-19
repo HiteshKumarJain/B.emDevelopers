@@ -1104,19 +1104,15 @@ form input[type="submit"] {
 /* Footer design */
 
 footer {
-    background: linear-gradient(  45deg,#3ab6bc, #009fa6) ;
+    background: linear-gradient(  45deg, #009ea6,#3ab5bc) ;
     color: #fff;
     font-size: 16px;
-}
-
-footer * {
-    box-sizing: border-box;
-    border: none;
-    outline: none;
+    
 }
 
 .row {
     padding: 1em 1em;
+    margin: 0 !important;
 }
 
 .row.primary {
@@ -1131,6 +1127,7 @@ footer * {
     flex-direction: column;
     padding: 0 2em;
     min-height: 15em;
+    
 }
 
 footer h3 {
@@ -1156,8 +1153,16 @@ footer li:not(:first-child) {
 footer ul li a {
     color: #fff;
     text-decoration: none;
+    transition: 0.5s;
 }
+footer .nav-link{
+    color: #ffffff;
 
+}
+footer .nav-link:hover{
+    transform: scale(1.01,1.5);
+    color: #fff;
+}
 
 .about p {
     text-align: justify;
