@@ -261,7 +261,7 @@ p {
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
-    padding: 10px;
+    padding: 10px 0px;
 }
 
 .row-sample {
@@ -486,16 +486,16 @@ h3 {
 } */
 
 
-/*------- footer-----*/
-.footer {
+/*------- aboutUs-----*/
+.aboutUs {
     width: 80%;
     margin: auto;
-    text-align: center;
+    /* text-align: center; */
     padding: 30px 0;
 
 }
 
-.footer h4 {
+.aboutUs h4 {
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
