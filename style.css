@@ -558,9 +558,10 @@ h3 {
 }
 
 .red-btn {
-    border: 1px solid #f44336;
+    border: 3px solid #3ab5bc;
     background: transparent;
-    color: #f44336
+    color: #3ab5bc;
+    padding: 5px;
 }
 
 .red-btn:hover {
@@ -1117,7 +1118,7 @@ footer {
 
 .row.primary {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
     align-items: stretch;
 }
 
@@ -1129,7 +1130,9 @@ footer {
     min-height: 15em;
     
 }
-
+.column iframe{
+    width: 100%;
+}
 footer h3 {
     width: 100%;
     text-align: left;
@@ -1191,4 +1194,9 @@ footer .nav-link:hover{
         grid-template-columns: 1fr;
     }
 
+}
+@media(max-width: 768px) {
+.columnMap{
+    width: 70vw !important;
+}
 }
