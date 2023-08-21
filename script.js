@@ -1,7 +1,7 @@
 const counters = [
-    { id: 'project-counter', targetValue: 10 },
-    { id: 'land-counter', targetValue: 5 },
-    { id: 'years-counter', targetValue: 20 }
+    { id: 'project-counter', targetValue: 70 },
+    { id: 'land-counter', targetValue: 10},
+    { id: 'years-counter', targetValue: 23 }
 ];
 
 const duration = 1000; // Duration in milliseconds
