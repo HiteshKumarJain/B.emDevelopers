@@ -979,7 +979,7 @@ h3 {
 .content p {
     margin-top: 25px;
     line-height: 1em;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .content button {
@@ -1112,23 +1112,28 @@ footer {
 }
 
 .row {
-    padding: 1em 1em;
+    padding-top: 1em;
     margin: 0 !important;
 }
 
 .row.primary {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: stretch;
 }
 
 .column {
     width: 100%;
     display: flex;
+    align-items: center;
     flex-direction: column;
     padding: 0 2em;
     min-height: 15em;
     
+}
+
+.links{
+    font-size: 1.15rem;
 }
 .column iframe{
     width: 100%;
