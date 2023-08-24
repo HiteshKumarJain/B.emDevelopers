@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> BEM Developers</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap">
     <link rel="stylesheet"
@@ -18,46 +19,6 @@
 
 <body>
     <section class="header">
-        <!-- <nav>
-            <a href="index.html"><img src="public/Images/B.em_logo.png"  style="margin-top: -5vh;"  alt="logo"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <ul class="main-menu">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li class="has-dropdown">
-                            <a href="#">Projects</a>
-                            <ul class="sub-menu">
-                                <li class="has-dropdown">
-                                    <a href="completed_projects.html">Completed projects</a>
-                                    <ul class="sub-sub-menu">
-                                        <li><a href="completed_projects.html#industrial">Industrial</a></li>
-                                        <li><a href="completed_projects.html#commercial">Commercial</a></li>
-                                        <li><a href="completed_projects.html#residential">Residential</a></li>
-                                    </ul>
-                                </li>
-                                <hr>
-                                <li class="has-dropdown">
-                                    <a href="ongoing_projects.html" style="padding: 4vh;">Ongoing Projects</a>
-                                    <ul class="sub-sub-menu">
-                                        <li><a href="ongoing_projects.html#industrial">Industrial</a></li>
-                                        <li><a href="ongoing_projects.html#commercial">Commercial</a></li>
-                                        <li><a href="ongoing_projects.html#residential">Residential</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="JointVenture.html">JOINT VENTURES</a></li>
-                        <li><a href="Consultancy.html">Consultancy</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-
-                </ul>
-            </div>
-            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
-        </nav> -->
-        <!------------ Nav bar  --------->
         <nav class="navbar navbar-expand-lg navbar-dark fs-6">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
@@ -299,18 +260,20 @@
                 <div class="testimonial-img">
                     <img src="public/Images/client-1.jpg">
                 </div>
-                <div>
+                <div class="testimonial-content">
                     <p> Bem developers is awersome team, renovation done by team was good. real life difficulites for
                         using some advanced technologies was explained to me, insead of wasting money in an undeveloped
-                        new tech as per their guidance nordern solution is solved by replacing it in mordern was which
-                        could'nt affets my mordern interior. </p>
+                        new tech as per their guidance mordern solution is solved by replacing it in mordern was which
+                        couldn't affect my mordern interior. </p>
                     <h3>Nicole waren</h3>
                     <!-- <i class='fa-thin fa-star'></i> -->
+                  <div class="rating">
                     <i class="fa fa-star" style="font-size:25px;color:gold"></i>
                     <i class="fa fa-star" style="font-size:25px;color:gold"></i>
                     <i class="fa fa-star" style="font-size:25px;color:gold"></i>
                     <i class="fa fa-star" style="font-size:25px;color:gold"></i>
                     <i class="fa fa-star-half-full" style="font-size:25px;color:gold"></i>
+                  </div>
 
                 </div>
             </div>
@@ -318,17 +281,19 @@
                 <div class="testimonial-img">
                     <img src="public/Images/client-2.jpeg">
                 </div>
-                <div>
+                <div class="testimonial-content">
                     <p>Thanks Bem developers for renovating my old home within budegets as per aggrement thou material
                         price was high after quote you didnt comperimise in material quality and finished it within
                         budget. </p>
                     <h3>Naresh</h3>
+                   <div class="rating">
                     <i class="fa fa-star" style="font-size:25px;color:gold"></i>
                     <i class="fa fa-star" style="font-size:25px;color:gold"></i>
                     <i class="fa fa-star" style="font-size:25px;color:gold"></i>
                     <i class="fa fa-star" style="font-size:25px;color:gold"></i>
                     <i class="fa fa-star" style="font-size:25px;color:gold"></i>
 
+                   </div>
 
                 </div>
             </div>
@@ -340,16 +305,17 @@
                 <div class="testimonial-img">
                     <img src="public/Images/client-3.jpeg">
                 </div>
-                <div>
+                <div class="testimonial-content">
                     <p> My dream came true with bem developers, i wished to build my house in with good looking and
                         without compermising in quality since its my dream to lasst long, now my house is awesome both
                         exterior and interior as per vasthu and as per drawings </p>
                     <h3>Dinesh</h3>
+                  <div class="rating">
                     <i class="fa fa-star" style="font-size:25px;color:gold"></i>
                     <i class="fa fa-star" style="font-size:25px;color:gold"></i>
                     <i class="fa fa-star" style="font-size:25px;color:gold"></i>
                     <i class="fa fa-star" style="font-size:25px;color:gold"></i>
-
+                  </div>
                 </div>
             </div>
 
@@ -357,15 +323,17 @@
                 <div class="testimonial-img">
                     <img src="public/Images/client-4.jpeg">
                 </div>
-                <div>
-                    <p> its amazing within a short span of time you guys compled some important renovation in my
+                <div class="testimonial-content">
+                    <p> It's amazing within a short span of time you guys compled some important renovation in my
                         industry without creating any loss of production i like your flexibility in working with us.</p>
                     <h3> Karupasamy </h3>
+                   <div class="rating">
                     <i class="fa fa-star" style="font-size:25px;color:gold"></i>
                     <i class="fa fa-star" style="font-size:25px;color:gold"></i>
                     <i class="fa fa-star" style="font-size:25px;color:gold"></i>
                     <i class="fa fa-star" style="font-size:25px;color:gold"></i>
                     <i class="fa fa-star" style="font-size:25px;color:gold"></i>
+                   </div>
                 </div>
             </div>
         </div>
@@ -383,7 +351,7 @@
     <!-Footer  -->
     <footer>
         <div class="row primary">
-            <div class="column about" style="justify-content: center; margin-top: -6vh;">
+            <div class="column about" style="justify-content: center;">
 
                 <!-- <h3>Foolish Developer</h3> -->
                 <div style="width: 100%; height: 45%;">

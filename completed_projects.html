@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> BEM Developers</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet"
@@ -228,7 +229,7 @@
                                 style="font-weight: lighter;">Mr Narasimman
                                 </span> </p>
                         <p class="card-text" style="font-weight: bold;">📍: <span
-                                style="font-weight: lighter;">Chetput</span>
+                                style="font-weight: lighter;">Chetpet</span>
                         </p>
                         <button
                             onclick="togglePopup( ['public/Images/Narasimman.JPG'])">Click
@@ -1327,7 +1328,6 @@
             modalImage.dataset.images = JSON.stringify(images);
             modalImage.dataset.currentImageIndex = 0;
             modalImage.src = images[0];
-
             modal.style.display = "block";
         }
         function changeImage(direction) {
