@@ -13,6 +13,8 @@
   }
   nav img{
     width: 9rem;
+    height: 6rem;
+    margin-top: 0 !important;
   }
 }
 
