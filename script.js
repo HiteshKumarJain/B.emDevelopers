@@ -1,6 +1,6 @@
 const counters = [
     { id: 'project-counter', targetValue: 124 },
-    { id: 'land-counter', targetValue: 10},
+    // { id: 'land-counter', targetValue: 10},
     { id: 'years-counter', targetValue: 23 }
 ];
 

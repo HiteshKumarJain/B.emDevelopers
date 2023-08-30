@@ -500,7 +500,7 @@ h3 {
 .aboutUs h4 {
     margin-bottom: 25px;
     margin-top: 20px;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .icons {
@@ -540,6 +540,11 @@ h3 {
 
 .about-col {
     flex-basis: 48%;
+    padding: 2rem 0.45rem;
+
+}
+.about-col-1 {
+    flex-basis: 80%;
     padding: 2rem 0.45rem;
 
 }
