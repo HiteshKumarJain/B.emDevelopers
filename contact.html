@@ -290,19 +290,19 @@
         function sendMail(e) {
             e.preventDefault();
             (function () {
-                emailjs.init("jgYl-hYVV5sJzy-sr"); //Account Public Key
+                emailjs.init("fYpil9v7HdmJX6I5_"); //Account Public Key
             })();
 
             var params = {
                 sendername: document.querySelector("#senderName").value,
-                to: "hiteshkumarjainhkj@gmail.com",
+                to: "bemmanagement6@gmail.com",
                 subject: document.querySelector("#subject").value,
                 replyto: document.querySelector("#from").value,
                 message: document.querySelector("#mailBody").value,
                 phonenumber: document.querySelector("#senderNumber").value
             };
-var serviceId = "service_wgp5o1f"; // Email Service Id
-var templateId = "template_lj4wtn6"; // Email template Id
+var serviceId = "service_fdo476m"; // Email Service Id
+var templateId = "template_wbvon1n"; // Email template Id
 
 emailjs.send(serviceId, templateId, params)
 .then( res =>{
