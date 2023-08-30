@@ -293,7 +293,7 @@
                 sendername: document.querySelector("#senderName").value,
                 to: "hiteshkumarjainhkj@gmail.com",
                 subject: document.querySelector("#subject").value,
-                from: document.querySelector("#from").value,
+                replyto: document.querySelector("#from").value,
                 message: document.querySelector("#mailBody").value,
                 phonenumber: document.querySelector("#senderNumber").value
             };
@@ -303,6 +303,9 @@ var templateId = "template_0xcn8xw"; // Email template Id
 emailjs.send(serviceId, templateId, params)
 .then( res =>{
     alert("Email sent successfully !!");
+    setTimeout(() => {
+        window.location.reload();
+    }, 500);
 })
 .catch( ()=>{
 alert("Error unable to send the mail");    
