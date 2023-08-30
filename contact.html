@@ -154,7 +154,7 @@
                 <div class="contact-col">
                     <form onsubmit="sendMail(event)">
                         <input type="text" name="name" placeholder="Enter your Name" required id="senderName">
-                        <input type="email" name="email" placeholder="Enter your email address" required id="replyTo">
+                        <input type="email" name="email" placeholder="Enter your email address" required id="from">
                         <input type="tel" name="number" placeholder="Enter your contact number" pattern="[0-9]+"
                             required id="senderNumber">
                         <input type="text" placeholder="Enter the subject for your mail" required id="subject">
@@ -293,7 +293,7 @@
                 sendername: document.querySelector("#senderName").value,
                 to: "hiteshkumarjainhkj@gmail.com",
                 subject: document.querySelector("#subject").value,
-                replyto: document.querySelector("#replyTo").value,
+                from: document.querySelector("#from").value,
                 message: document.querySelector("#mailBody").value,
                 phonenumber: document.querySelector("#senderNumber").value
             };
