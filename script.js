@@ -1,8 +1,17 @@
-const counters = [
+let counters = [
     { id: 'project-counter', targetValue: 124 },
     // { id: 'land-counter', targetValue: 10},
-    { id: 'years-counter', targetValue: 23 }
+    { id: 'years-counter', targetValue: 23 },
+
 ];
+if(document.getElementById('ongoing-project-counter')){
+     counters = [
+        { id: 'ongoing-project-counter', targetValue: 9 },
+        { id: 'years-counter', targetValue: 23 },
+    
+    ];
+}
+
 
 const duration = 1000; // Duration in milliseconds
 
